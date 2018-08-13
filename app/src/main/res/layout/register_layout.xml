@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="94dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparent" />
+
+    <TextView
+        android:id="@+id/lb_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lb_email"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#11000000"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/lb_email"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+    <TextView
+        android:id="@+id/lb_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/password"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/lb_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <TextView
+        android:id="@+id/lb_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lb_fullname"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lb_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+
+    <TextView
+        android:id="@+id/lb_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/height"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_height"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/lb_zipcode"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <TextView
+        android:id="@+id/lb_zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/zipcode"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_zipcode"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_zipcode"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+
+    <TextView
+        android:id="@+id/lb_doe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lb_DOB"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_height" />
+
+    <Spinner
+        android:id="@+id/sp_dob_user"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/year_arrays"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/lb_doe"
+        app:layout_constraintTop_toBottomOf="@+id/et_height" />
+
+    <TextView
+        android:id="@+id/lb_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lb_gender"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/sp_gender"
+        app:layout_constraintTop_toBottomOf="@+id/et_zipcode" />
+
+    <Spinner
+        android:id="@+id/sp_gender"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+
+        android:entries="@array/gender_arrays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_zipcode" />
+
+    <TextView
+        android:id="@+id/lb_age_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lb_interested_age"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_dob_user" />
+
+    <TextView
+        android:id="@+id/lb_interested_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/lb_gender_interested"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/sp_age_target"
+        app:layout_constraintTop_toBottomOf="@+id/sp_gender" />
+
+    <Spinner
+        android:id="@+id/sp_age_target"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/age_target"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/lb_age_target"
+        app:layout_constraintTop_toBottomOf="@+id/sp_dob_user" />
+    <Spinner
+        android:id="@+id/sp_interested_gender"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/gender_arrays"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_gender" />
+
+
+    <TextView
+        android:id="@+id/lb_race"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lb_race"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_age_target" />
+
+    <Spinner
+        android:id="@+id/sp_race"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/race_arrays"
+        app:layout_constraintStart_toEndOf="@+id/lb_race"
+        app:layout_constraintTop_toBottomOf="@+id/sp_age_target" />
+
+    <TextView
+        android:id="@+id/lb_your_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/upload_photo"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_race" />
+
+    <TextView
+        android:id="@+id/tv_link_your_photo"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/lb_your_photo"
+        app:layout_constraintTop_toBottomOf="@+id/sp_race" />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_rectangle_pink"
+        android:text="@string/Register"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_link_your_photo" />
+
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_link_your_photo"
+        app:layout_constraintTop_toBottomOf="@+id/sp_race" />
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>
